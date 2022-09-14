@@ -32,10 +32,26 @@
     justify-items: center;
 }
 
+.greeting {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+}
+
 .header { 
+    padding: 1rem;
     border: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     grid-area: 1 / 2 / 2 / -1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.headerButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 .help {
@@ -47,6 +63,10 @@
     font-size: 3rem;
 }
 
+.profilePic {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
 .tabs {
     font-size: 2rem;
     margin: 4rem;
@@ -55,4 +75,14 @@
 
 ul {
     list-style: none;
+}
+
+.userIcons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.userName {
+    grid-area: 2 / 2 / 3 / 3;
 }
