@@ -3,15 +3,34 @@
     src: url('Roboto-Regular.ttf');
 }
 
+:root {
+    --themeColor: rgb(77, 118, 255);
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: Roboto;
 }
 
+.announcement {
+    padding: 1rem;
+    background-color: white;
+    display: grid;
+}
+
+.announcementContainer {
+    display: grid;
+}
+
 .cards {
+    padding: 1rem;
     background-color: rgb(228, 228, 228);
     grid-area: 2 / 2 / -1 / -1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
 }
 
 .container {
@@ -22,7 +41,7 @@
 }
 
 .dashboard{
-    background-color: rgb(77, 118, 255);
+    background-color: var(--themeColor);
     color: white;
     grid-area: 1 / 1 / -1 / 2;
     padding-left: 1rem;
@@ -67,10 +86,39 @@
     grid-area: 1 / 1 / 3 / 2;
 }
 
+.projects {
+    grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr repeat(3, 4fr);
+}
+
+.proj-card {
+    background-color: white;
+    padding: 1rem;
+}
+
+#projTitle {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
 .tabs {
     font-size: 2rem;
     margin: 4rem;
     display: grid;
+}
+
+.trending {
+    display: grid;
+}
+
+.trendingPerson {
+    padding: 1rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 ul {
