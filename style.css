@@ -1,4 +1,58 @@
+@font-face {
+    font-family: Roboto;
+    src: url('Roboto-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.cards {
+    background-color: rgb(228, 228, 228);
+    grid-area: 2 / 2 / -1 / -1;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
 .dashboard{
     background-color: rgb(77, 118, 255);
     color: white;
+    grid-area: 1 / 1 / -1 / 2;
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 3fr 3fr;
+    justify-items: center;
+}
+
+.header { 
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-area: 1 / 2 / 2 / -1;
+}
+
+.help {
+    font-size: 2rem;
+    display: grid;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.tabs {
+    font-size: 2rem;
+    margin: 4rem;
+    display: grid;
+}
+
+ul {
+    list-style: none;
 }
